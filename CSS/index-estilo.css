@@ -1,0 +1,93 @@
+body{
+    background-color: #0B0A0D;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 5%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container{
+    width: 30%;
+    height: 30vh;
+    border-radius: 3%;
+    background-color: white;
+    padding: 3em;
+    margin: 1% auto;
+    color: #7159C1;
+}
+
+#lblMoeda{
+    font-size: 1.5em;
+    font-family: 'Muli', sans-serif;
+}
+
+#valorMoeda{
+    margin-top: .5em;
+    font-size: 1.1em;
+    width: 100%;
+    border-style: none;
+    border: .5px solid gray;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+#listaMoedas{
+    margin-top: .5em;
+    font-size: 1em;
+    border-style: none;
+    border: .5px solid gray;
+    border-radius: 5px;
+    padding: .5em;
+    width: 15%;
+}
+
+
+#containerBtn{
+    text-align: center;
+}
+
+#btnConverte{
+    margin-top: 1em;
+    font-size: 1.1em;
+    border: none;
+    border-radius:6px;
+    padding: .5em;
+    width: 35%;
+    color: white;
+    background-color: #7159C1;
+    font-family: 'Muli', sans-serif;
+    cursor: pointer;
+}
+
+#resultadoConversor{
+    margin-top: 1.2em;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+}
+
+@media(max-width: 700px){
+    .container{
+        width: 80%;
+        height: 40vh;
+        padding: 1em;
+        margin-top: 5%;
+    }
+
+    #valorMoeda{
+        width: 90%;
+    }
+
+    #listaMoedas{
+        width: 30%;
+    }
+
+    #btnConverte{
+        width: 50%;
+    }
+}

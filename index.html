@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Muli:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index-estilo.css">
+    <title>Conversor</title>
+</head>
+<body>
+    <h1 class="titulo-principal">Conversor de Moeda</h1>
+    <div class="container">
+        <form class="conversor" onsubmit="conversorController.converteBtn()">
+            <label for="valorMoeda" id="lblMoeda">Valor em Reais</label><br>
+            <input type="number" name="valorMoeda" id="valorMoeda" step="0.01" min="0" maxlength="10">
+            <select name="listaMoedas" id="listaMoedas">
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                <option value="iene">Iene</option>
+                <option value="libra">Libra</option>
+            </select><br>
+            <div id="containerBtn"><button type="submit" class="convert" id="btnConverte">Converter</button></div>
+            <p id="resultadoConversor"></p>
+        </form>
+    </div>
+    <script src="JS/HttpService.js"></script>
+    <script src="JS/Conversor.js"></script>
+    <script src="JS/ConversorView.js"></script>
+    <script src="JS/ConversorModel.js"></script>
+    <script src="JS/ConversorController.js"></script>
+    <script>
+        var conversorController = new ConversorController();
+    </script>
+</body>
+</html>
